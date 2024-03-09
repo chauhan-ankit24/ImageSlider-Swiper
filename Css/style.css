@@ -18,16 +18,16 @@ body {
 .slide-container {
     max-width: 1120px;
     width: 100%;
-    background-color: grey;
     padding: 40px 0;
 }
 
 .silde-content {
     margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
 }
 
 .card {
-    /* width: 320px; */
     border-radius: 25px;
     background-color: #FFF;
 }
@@ -115,4 +115,36 @@ body {
 
 .button:hover {
     background: #265DF2;
+}
+
+.swiper-navBtn {
+    color: #6E93f7;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #0a47ed;
+}
+
+.swiper-navBtn::after,
+.swiper-navBtn::before {
+    font-size: 40px;
+}
+
+.swiper-pagination {
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-navBtn {
+        display: none;
+    }
+
+    .silde-content {
+        margin: 0 10px;
+    }
 }
